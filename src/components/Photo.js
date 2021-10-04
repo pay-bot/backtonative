@@ -24,8 +24,10 @@ export default function App() {
            {photos.map((photo) => (
                <div key={photo.id} className="photo-card">
                  <div className="grid-item">
+                   <div className="">
                  <img src={photo.thumbnailUrl} width="200px" />
                    <h2>{photo.title}</h2>
+                   </div>
                  </div>
                    
                </div>

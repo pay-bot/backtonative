@@ -24,41 +24,41 @@ export default function User() {
                 <div className="form1">
                   <div className="formm">
                     <div className="form-field">
-                      <label for="fname">Name</label>
+                      <label for="name">Name</label>
                       <input
                         type="text"
-                        id="fname"
-                        name="firstname"
+                        id="name"
+                        name="name"
                         placeholder="Your name.."
                       />
                     </div>
                     <div className="form-field">
-                      <label for="lname">User Name</label>
+                      <label for="username">User Name</label>
                       <input
                         type="text"
-                        id="lname"
-                        name="lastname"
-                        placeholder="Your last name.."
+                        id="username"
+                        name="username"
+                        placeholder="Your user name.."
                       />
                     </div>
                   </div>
                   <div className="formm">
                     <div className="form-field">
-                      <label for="fname">Name</label>
+                      <label for="email">Email</label>
                       <input
                         type="text"
-                        id="fname"
-                        name="firstname"
-                        placeholder="Your name.."
+                        id="email"
+                        name="email"
+                        placeholder="Your email.."
                       />
                     </div>
                     <div className="form-field">
-                      <label for="lname">User Name</label>
+                      <label for="phone">Phone</label>
                       <input
                         type="text"
-                        id="lname"
-                        name="lastname"
-                        placeholder="Your last name.."
+                        id="phone"
+                        name="phone"
+                        placeholder="Your phone.."
                       />
                     </div>
                   </div>
