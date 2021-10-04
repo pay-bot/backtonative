@@ -5,9 +5,9 @@ export default function Navbar() {
         <>
         <div className="nav">
            <div className="navbar">
-               <img src={logo} width="200px" height="100px" className=""/>
+               <img src={logo} width="200px" height="75px" />
                <h3 className>Jakarta, Indonesia</h3>
-               <div className="languange">
+               <div className="language">
                    <select>
                    <option value="en">English</option>
 					<option value="id">Indonesian</option>

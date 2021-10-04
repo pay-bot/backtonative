@@ -14,16 +14,20 @@ export default function App() {
      },[]);
    return (
        <>
-       <div className="pages">
+       <div className="">
        <div className="">
 
        <Navbar />
-       <SideBar />
        </div>
-       <div className="container">
+       <div className="page-container">
+       <SideBar />
            {photos.map((photo) => (
-               <div key={photo.id} className="">
-                   <img src={photo.thumbnailUrl} />
+               <div key={photo.id} className="photo-card">
+                 <div className="grid-item">
+                 <img src={photo.thumbnailUrl} width="200px" />
+                   <h2>{photo.title}</h2>
+                 </div>
+                   
                </div>
                ))}
        </div>
