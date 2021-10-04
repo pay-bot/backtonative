@@ -6,7 +6,7 @@ export default function SideBar() {
         <>
             <ul className="sidebar">
                 <li className="bar"><Link to="/">USER</Link></li>
-                <li className="bar"><Link to="/photo">Photo</Link></li>
+                <li className="bar"><Link to="/photo">PHOTO</Link></li>
             </ul>
         </>
     )
