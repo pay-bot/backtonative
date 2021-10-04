@@ -65,18 +65,7 @@ a:link {
   
 }
 
-.photo-card {
-  padding: 5px;
-  margin: 5px;
-  border: black;
-  border-style: solid;
-  height: 400px;
-  width: 200px;
-  display: grid;
-}
-.photo-card h2 {
-  text-align: center;
-}
+
 
 
 
@@ -145,4 +134,26 @@ a:link {
   padding-left: 15px;
   padding-right: 15px;
   
+}
+
+.photo {
+
+}
+
+.photo-card {
+  padding: 5px;
+  margin: 5px;
+  border: black;
+  border-style: solid;
+  height: 400px;
+  width: 200px;
+  display: grid;
+}
+.photo-card h2 {
+  text-align: center;
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
 }
