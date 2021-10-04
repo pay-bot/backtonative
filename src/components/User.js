@@ -19,8 +19,8 @@ export default function User() {
        </div>
        <div className="user-container">
            {users.map((user) => (
-               <div className="">
-           <h2>{user.name}</h2>
+               <div className="user-card">
+           <h2 className="">{user.name}</h2>
            </div>
            ))}
        </div>

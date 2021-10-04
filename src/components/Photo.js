@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, {useState, useEffect} from 'react'
 import Navbar from "./Navbar";
 import SideBar from "./SideBar";
@@ -24,7 +23,6 @@ export default function App() {
        <div className="container">
            {photos.map((photo) => (
                <div key={photo.id} className="">
-
                    <img src={photo.thumbnailUrl} />
                </div>
                ))}
