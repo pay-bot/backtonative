@@ -9052,6 +9052,11 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-dropdown-wrapper@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-dropdown-wrapper/-/react-dropdown-wrapper-0.0.4.tgz#5bec857407a81e936468e7f4ea065eb14d63324e"
+  integrity sha512-qiWR9Om59VBLXUZITg5YL9bTpp8gOWchVQXM9Q2Wz3Kc2PbhL2xffbR+TroIX/uUCn5aisrGYFUAh16j+jUf4A==
+
 react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
