@@ -17,7 +17,7 @@ export default function User() {
           <Navbar />
         </div>
         <div className="page-container">
-          <SideBar />
+          {/* <SideBar /> */}
           <div className="user-contain">
             <div className="users-form">
               <form action="/action_page.php">

@@ -13,11 +13,11 @@ export default function App() {
   return (
     <>
       <div className="">
-        <div className="">
+        <div className="nav-wrapper">
           <Navbar />
         </div>
         <div className="page-container">
-          <SideBar />
+          {/* <SideBar /> */}
           <div className="photo-container">
             {photos.map((photo) => (
               <div key={photo.id} className="photo-card">

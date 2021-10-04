@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import logo from '../baezeni.jpg'
 import DropdownWrapper from "react-dropdown-wrapper";
 import caret from '../caret.svg'
+import {Link} from 'react-router-dom'
+
 
 
 export default function Navbar() {
@@ -64,6 +66,12 @@ export default function Navbar() {
                </div>
                </div> 
                </div>
+               <div className="sidebar-wrapper">
+               <ul className="sidebar" style={navcolor}>
+                <li className="bar"><Link to="/">USER</Link></li>
+                <li className="bar"><Link to="/photo">PHOTO</Link></li>
+            </ul>
+            </div>
         </>
     )
 }
