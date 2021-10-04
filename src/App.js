@@ -14,22 +14,6 @@ function App() {
       <Route path="/photo" component={Photo} />
     </>
 
-
-
-
-
-    // <div className="">
-    //   <div className="navbar">
-    //     <img src={logo} className="img-logo" />
-    //     <span className="brand" >Jakarta, Indonesia</span>
-    //   </div>
-    //   <div className="side-container">
-    //   <ul className="sidebar">
-    //             <li className="bar">USER</li>
-    //             <li className="bar">PHOTO</li>
-    //         </ul>
-    //         </div>
-    // </div>
   );
 }
 
