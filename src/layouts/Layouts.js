@@ -4,7 +4,6 @@ import SideBar from '../components/sidebar/SideBar'
 
 export default function Layouts(props) {
     
-    
     return (
         <>
         <div className="overflow-x-hidden">
