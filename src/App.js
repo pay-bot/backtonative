@@ -1,17 +1,17 @@
 import './App.css';
-import { Route } from "react-router-dom";
-import '../src/components/Home.module.css'
-import SideBar from './components/SideBar';
-import logo from '../src/baezeni.jpg'
-import User from "./components/User";
-import Photo from "./components/Photo";
-import Home from "./components/Home";
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import User from "./pages/User";
+import Photo from "./pages/Photo";
+import Layouts from "./layouts/Layouts"
 function App() {
   return (
     <>
-      <Route exact path="/" component={User} />
+    <Router>
+      <Layouts>
+      <Route exact path="/" activeClassName='bg-black' component={User} />
       <Route path="/photo" component={Photo} />
+      </Layouts>
+      </Router>
     </>
 
   );
