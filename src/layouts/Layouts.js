@@ -19,7 +19,7 @@ export default function Layouts({children}) {
           <Navbar nav={navcolor} onColorChange={changeNavColor} />
           <SideBar nav={navcolor} />
         </div>
-        <main className="w-screen h-full items-center justify-center flex">
+        <main className="w-screen h-full items-center justify-center p-20 flex">
           {children}
         </main>
       </div>
