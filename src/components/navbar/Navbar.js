@@ -4,23 +4,25 @@ import caret from "../../caret.svg";
 import logo from "../../baezeni.jpg";
 
 
-export default function Navbar(props) {
+
+
+export default function Navbar() {
   const [navcolor, setNavColor] = useState({
     backgroundColor: "aquamarine",
   });
-
+  
   return (
     <>
-      <div className="w-screen ">
-        <div className="flex h-20 z-30 px-10 items-center " style={navcolor}>
+      <div className="w-screen h-full fixed">
+        <div className="flex h-20 px-10 items-center " style={navcolor}>
         <img src={logo} className="mx-5 w-32 h-20 py-2 rounded-2xl" />
 
-          <div className="w-3/12 ml-auto flex relative justify-end -mt-5 ">
+          <div className="w-3/12 ml-auto flex justify-end items-center ">
             <DropdownWrapper
               closeOnEsc
               onStateChange={console.log}
               wrapperProps={{
-                className: "absolute border px-2 py-1 rounded-xl border-2 bg-white ",
+                className: "border px-2 py-1 rounded-xl border-2 bg-white ",
               }}
             >
               {({ changeStatus, isShow }) => (
@@ -60,6 +62,7 @@ export default function Navbar(props) {
               )}
             </DropdownWrapper>
           </div>
+         
         </div>
       </div>
     </>

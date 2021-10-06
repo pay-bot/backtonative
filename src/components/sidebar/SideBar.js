@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function SideBar(props) {
+export default function SideBar({nav}) {
     return (
       <>
-        <div className="fixed -z-30 w-60 h-screen bg-blue-400" >
+        <div className="fixed w-32 h-screen " style={nav}>
           <ul className="py-10 ">
             <li className="flex justify-center mb-10">
             </li>

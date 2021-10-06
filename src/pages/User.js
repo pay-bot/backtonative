@@ -12,12 +12,12 @@ export default function User() {
   return (
     <>
         
-          <div className="md:w-9/12  mx-auto justify-center flex bg-gray-100 rounded">
-            <div className="my-10">
+          <div className="w-9/12 justify-center flex ">
+            <div className="">
             <div className="users-form">
               <form action="/action_page.php">
                 <div className="my-4">
-                  <div className="flex my-8 ">
+                  <div className="flex py-8 ">
                     <div className="block mx-2 w-full">
                       <label for="name" className="block text-lg font-semibold">Name</label>
                       <input
@@ -26,7 +26,6 @@ export default function User() {
                         name="name"
                         className="border py-2 px-5 w-full"
                         placeholder="Your name.."
-                        size="35"
                       />
                     </div>
                     <div className="block mx-2 w-full">
@@ -36,7 +35,6 @@ export default function User() {
                         id="username"
                         name="username"
                         className="border py-2 px-5 w-full"
-                        size="35"
                         placeholder="Your user name.."
                       />
                     </div>
@@ -49,7 +47,6 @@ export default function User() {
                         id="email"
                         name="email"
                         className="border py-2 px-5 w-full"
-                        size="35"
                         placeholder="Your email.."
                       />
                     </div>
@@ -61,7 +58,6 @@ export default function User() {
                         id="phone"
                         name="phone"
                         className="border py-2 px-5 w-full"
-                        size="35"
                         placeholder="Your phone.."
                       />
                     </div>
@@ -73,7 +69,7 @@ export default function User() {
                 
               </form>
             </div>
-            <div className="my-8">
+            <div className="py-8">
               <table className="table-auto ">
                 <tr className="">
                   <th className="bg-blue-400 py-2 px-3 border text-gray-800 ">Id</th>

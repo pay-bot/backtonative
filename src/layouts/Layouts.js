@@ -1,18 +1,26 @@
-import React from 'react'
-import Navbar from '../components/navbar/Navbar'
-import SideBar from '../components/sidebar/SideBar'
+import React, { useState } from "react";
+import Navbar from "../components/navbar/Navbar";
+import SideBar from "../components/sidebar/SideBar";
 
-export default function Layouts(props) {
+export default function Layouts({children}) {
+  const [navcolor, setNavColor] = useState({
+    backgroundColor: "aquamarine",
+  });
+
+  const changeNav = () => {
     
-    return (
-        <>
-        <div className="overflow-x-hidden">
-            <div className="">
-            <Navbar />
-            <SideBar />
-            </div>
-            <main className="w-full h-full items-center justify-center ml-28 mt-10 flex">{props.children}</main>
-            </div>
-        </>
-    )
+  }
+  return (
+    <>
+      <div className="">
+        <div className="">
+          <Navbar onClick={changeNav} />
+          <SideBar nav={navcolor} />
+        </div>
+        <main className="w-screen h-full items-center justify-center p-20 flex">
+          {children}
+        </main>
+      </div>
+    </>
+  );
 }
