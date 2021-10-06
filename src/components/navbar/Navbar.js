@@ -6,13 +6,13 @@ import logo from "../../baezeni.jpg";
 
 
 
-export default function Navbar({navcolor, onColorChange}) {
+export default function Navbar({nav, onColorChange}) {
   
   
   return (
     <>
       <div className="w-screen h-full fixed">
-        <div className="flex h-20 px-10 items-center " style={navcolor}>
+        <div className="flex h-20 px-10 items-center " style={nav}>
         <img src={logo} className="mx-5 w-32 h-20 py-2 rounded-2xl" />
 
           <div className="w-3/12 ml-auto flex justify-end items-center ">

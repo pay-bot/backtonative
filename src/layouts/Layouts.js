@@ -7,14 +7,16 @@ export default function Layouts({children}) {
     backgroundColor: "aquamarine",
   });
 
-  const changeNav = () => {
-    
-  }
+  const changeNavColor = (color) => {
+    setNavColor({
+      backgroundColor: color
+    });
+  };
   return (
     <>
       <div className="">
         <div className="">
-          <Navbar onClick={changeNav} />
+          <Navbar nav={navcolor} onColorChange={changeNavColor} />
           <SideBar nav={navcolor} />
         </div>
         <main className="w-screen h-full items-center justify-center p-20 flex">
