@@ -6,10 +6,8 @@ import logo from "../../baezeni.jpg";
 
 
 
-export default function Navbar() {
-  const [navcolor, setNavColor] = useState({
-    backgroundColor: "aquamarine",
-  });
+export default function Navbar({navcolor, onColorChange}) {
+  
   
   return (
     <>
@@ -36,22 +34,14 @@ export default function Navbar() {
                   </button>
                   {isShow && (
                     <div className="flex flex-col">
-                      <button
-                        onClick={() =>
-                          setNavColor({
-                            backgroundColor: "aquamarine",
-                          })
-                        }
+                     <button
+                        onClick={() => onColorChange('aquamarine')}
                         className="space-y-1 capitalize font-semibold"
                       >
                         default
                       </button>
                       <button
-                        onClick={() =>
-                          setNavColor({
-                            backgroundColor: "white",
-                          })
-                        }
+                        onClick={() => onColorChange('white')}
                         className="space-y-1 capitalize font-semibold"
                       >
                         white
